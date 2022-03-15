@@ -1,0 +1,58 @@
+MÉTODOS DE REQUISIÇÕES - HTTP Verbs:
+
+- GET: Leitura (quando a gente precisa buscar uma informação, uma lista, id..)
+- POST: Criação (de objeto ou informação)
+- PUT: Atualização geral
+- DELETE: Deleção
+- PATCH: Atualização parcial (por exemplo.. o nosso usuario tem uma imagem, e a gente quer
+atualizar)
+
+HTTPS Codes:
+Quais sao os tipos de retorno que podemos dar para o nosso client
+
+1XX: Informativo - a solicitação foi aceita ou o processo continua em andamento
+2XX: Confirmação
+  200: Requisição bem sucedida
+  201: Created - Geralmente usado para o POST após uma inserção
+3XX: Redirecionamento
+  301: Moved Permantently 
+  302: Moved
+4XX: Erro do cliente
+  400: Bad request
+  401: Unauthorized
+  403: Forbidden
+  404: Not Found
+  422: Unprocessable Entity
+5XX: Erro no servidor - o servidor falhou ao concluir a solicitação
+  500: Internal Server Errpr
+  502: Bad Gateway
+
+PARAMETROS DAS REQUISIÇÕES:
+- Header Params (que sao os parametros que vao no cabeçalho, por exemplo token, controle 
+de sessão, etc)
+- Query Params (que sao inseridos no final de uma url, por exemplo quando a gente quer fazer
+uma paginação)
+- Route Params (eles vao no meio da rota, por exemplo quando a gente quer buscar um usuario
+por id ou fazer uma alteração)
+- Body Params (quando a gente envia o parametro dentro do nosso body)
+
+BOAS PRATICAS API Rest:
+- A utilização correta dos metodos HTTP
+- A utilização correta dos status no retorno das respostas
+- Padrão Nomeclatura
+  - Busca por usuarios - GET:
+    http://enderecosvr.com.br/v1/users
+  - Busca de usuario por id - GET:
+    http://enderecosvr.com.br/v1/users/1
+  - Busca de endereço do usuario - GET:
+    http://enderecosvr.com.br/v1/users/1/address
+  - Deleção de um usuario - DELETE:
+    http://enderecosvr.com.br/v1/users/1
+  - Atualização do Status do usuario - PATCH:
+    http://enderecosvr.com.br/v1/users/1/status
+
+  
+
+
+
+  

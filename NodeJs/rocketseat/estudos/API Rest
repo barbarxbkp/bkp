@@ -1,0 +1,34 @@
+API Rest
+
+API:
+- Application Programming Interface (Interface de Programação de Aplicativos)
+- Conjunto de especificações de possiveis interações entre aplicações
+- Documentação para desenvolvedor
+
+REST:
+- Representation State Transfer (Tansferencia Representacional de Estado)
+- Modelo de arquitetura
+- 6 Regras:
+  1 - Client-Server (lado client e lado server, o client nao precisa saber o
+  que esta sendo feito no server, e nem o server saber o que esta sendo feito no client)
+  2 - Stateless (O cliente pode realizar quantas requisões ele quiser, porem o servidor
+  nao armazena nenhum estado ou sessão, por isso precisa passar todas as informações)
+  3 - Cache
+  4 - Interface Uniforme
+        - Identificação dos recursos, por exemplo:
+            http://enderecosvr.com.br/products
+            http://enderecosvr.com.br/clients
+        - Representação dos recuros:
+            isso significa que o servidor ele pode entegrar as solicitações tanto de uma forma
+            json, xml ou como html, qualquer outra forma.
+        - Mensagens auto-descritivas:
+            é importante que a gente retorne para o nosso cliente mensagens bem descritivas,
+            principalmente na hora que der erro
+
+        - HATEOAS (Hypertext As THe Engine Of Application State):
+            significa que a gente poder entregar links dentro da nossa requisição
+     
+  5 - Camadas (a aplicação precisa ser criada em camadas, ela deve permitir que existam
+   camadas entre o client e o server)
+  6 - Código Sob Demanda (que permite que as funcionalidades do cliente elas sejam extendidas 
+  na forma de scripts ou mini app)

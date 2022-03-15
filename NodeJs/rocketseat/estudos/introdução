@@ -1,0 +1,32 @@
+caracteristicas node.js:
+
+- arquitetura event loop
+  - call stack
+- single - thread
+- non-blocking I/O
+- modulos proprios
+  - http
+  - dns
+  - filesistem
+  - buffer
+
+Event Loop:
+Call stack 
+
+Por padrao, ele vai ter 4 threads disponiveis para serem excecutadas
+
+Ele escuta uma coisa por vez, uma requisão por vez, apartir do momento que ele escuta ou seja,
+como é single thread, faz uma requisição ele vai mandar para uma thread que esteja disponivel
+
+O que sao os gerenciadores de pacotes?
+- NPM e yarn
+- instalar bibliotecas externas
+- Disponibilizar bibliotecas
+
+*yarn é mais rapido que o npm*
+
+Frameworks:
+ - Express
+ - Eggs.js
+ - Nest.js
+ - Adonis.js
